@@ -1,6 +1,7 @@
 package exercise;
 
-public class Cane extends Animale{
+public class Cane extends Animale implements Nuotante{
+
     public Cane() {
     }
 
@@ -12,5 +13,10 @@ public class Cane extends Animale{
     @Override
     public void mangia() {
         System.out.println("sono un cane, mangio carne");
+    }
+
+    @Override
+    public void nuota() {
+        System.out.println("sto nuotando a cagnolino");
     }
 }
